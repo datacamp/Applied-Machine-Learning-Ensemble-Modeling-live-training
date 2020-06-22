@@ -28,7 +28,7 @@ This part of the 'Live training Spec' process is designed to help guide you thro
 > - How to select a baseline Machine Learning algorithm
 > - Discuss alternative stacking methods
 > - Create simple, two-layer regressor and classifier stacked models
-> - How to 
+> - How to tune hyperparameters using K-fold cross-validation
 
 
 
@@ -39,7 +39,9 @@ This part of the 'Live training Spec' process is designed to help guide you thro
 > - seaborn
 > - vecstack?
 > - scikit-learn
-> - 
+> - mlxtend (StackingClassifier)?
+> - sklearn.ensemble.StackingClassifier
+> - sklearn.ensemble.StackingRegressor
 
 ### C. What terms or jargon will you define?
 
@@ -57,6 +59,7 @@ _To help minimize the amount of Q&As and make your live training re-usable, list
 > 
 > - Anatomy of a matplotlib figure: When calling a matplotlib plot, a figure, axes and plot is being created behind the background. (You can find it at minute 11)
 > - As long as you do understand how plots work behind the scenes, you don't need to memorize syntax to customize your plot. 
+> - Concept of leakage, not leaking information from between layers to avoid overfitting, not generalizing, etc.
 
 ### E. What datasets will you use? 
 
