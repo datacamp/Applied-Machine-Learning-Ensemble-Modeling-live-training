@@ -23,6 +23,13 @@ This part of the 'Live training Spec' process is designed to help guide you thro
 > - How to clean a DataFrame using `pandas` to make it ready for analysis.
 > - Apply common spreadsheets operations such as pivot tables and vlookups in Python using `pandas`.
 > - Create simple, interesting visualizations using `matplotlib`.
+> - Key considerations to take in when transitioning from single layer model to stacking layers.
+> - The Data Scientist mindset and keys to success in transitioning from baseline models to stacking models.
+> - How to select a baseline Machine Learning algorithm
+> - Discuss alternative stacking methods
+> - Create simple, two-layer regressor and classifier stacked models
+> - How to 
+
 
 
 ### B. What technologies, packages, or functions will students use? Please be exhaustive.
@@ -30,6 +37,9 @@ This part of the 'Live training Spec' process is designed to help guide you thro
 > - pandas
 > - matplotlib
 > - seaborn
+> - vecstack?
+> - scikit-learn
+> - 
 
 ### C. What terms or jargon will you define?
 
