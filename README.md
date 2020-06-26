@@ -21,8 +21,8 @@ This part of the 'Live training Spec' process is designed to help guide you thro
 > - How to create new columns out of your DataFrame for more interesting features.
 > - Perform exploratory analysis of a DataFrame in `pandas`.
 > - How to clean a DataFrame using `pandas` to make it ready for analysis.
-> - Apply common spreadsheets operations such as pivot tables and vlookups in Python using `pandas`.
 > - Create simple, interesting visualizations using `matplotlib`.
+
 > - Key considerations to take in when transitioning from single layer model to stacking layers.
 > - The Data Scientist mindset and keys to success in transitioning from baseline models to stacking models.
 > - How to select a baseline Machine Learning algorithm
@@ -37,9 +37,9 @@ This part of the 'Live training Spec' process is designed to help guide you thro
 > - pandas
 > - matplotlib
 > - seaborn
-> - vecstack?
 > - scikit-learn
-> - mlxtend (StackingClassifier)?
+> - mlxtend.StackingClassifier
+> - vecstack
 > - sklearn.ensemble.StackingClassifier
 > - sklearn.ensemble.StackingRegressor
 
@@ -51,6 +51,10 @@ _Whether during your opening and closing talk or your live training, you might h
 > 
 > - Packages: Packages are pieces of software we can import to Python. Similar to how we download, install Excel on MacOs, we import pandas on Python. (You can find it at minute 6:30)
 
+> - What is considered a 'weak' learner?
+> - Ensemble: In machine learning, a collection of multiple base models combined to create a single model that has better predictive performance than any of the base models used to produce it.  For example, the Random Forest algorithm is an ensemble method that constructs a collection of Decision Trees to output a single trained Random Forest model.
+> - Stacking: In machine learning, a collection of multiple base models that use algorithms that are different from one another and used in layers.  The predictions from the layers are used as input in the final layer to produce a final trained model that has better predictive performance than any of the base models used to product it.  Stacking is an ensemble method.
+
 ### D. What mistakes or misconceptions do you expect? 
 
 _To help minimize the amount of Q&As and make your live training re-usable, list out some mistakes and misconceptions you think students might encounter along the way._
@@ -59,7 +63,10 @@ _To help minimize the amount of Q&As and make your live training re-usable, list
 > 
 > - Anatomy of a matplotlib figure: When calling a matplotlib plot, a figure, axes and plot is being created behind the background. (You can find it at minute 11)
 > - As long as you do understand how plots work behind the scenes, you don't need to memorize syntax to customize your plot. 
+
+> - Ensuring the layers are composed of 'weak' learners.
 > - Concept of leakage, not leaking information from between layers to avoid overfitting, not generalizing, etc.
+> - As long as you understand how base models work behind the scenes, you don't need to memorize arguments to customize your stacking model.
 
 ### E. What datasets will you use? 
 
@@ -68,6 +75,10 @@ As a rule of thumb, your dataset should always answer yes to the following quest
 > Is the dataset/problem I’m working on, something an industry data scientist/analyst could work on? 
 
 Check our [datasets to avoid](https://instructor-support.datacamp.com/en/articles/2360699-datasets-to-avoid) list. 
+
+> - [New York City Property Sales](https://www.kaggle.com/new-york-city/nyc-property-sales)-Regression
+> - [Iowa Liquor Sales](https://www.kaggle.com/residentmario/iowa-liquor-sales)-Regression
+> - [Pima Indians Diabetes](https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.csv)-Binary Classification
 
 ## Step 2: Who is this session for?
 
@@ -82,19 +93,20 @@ Terms like "beginner" and "expert" mean different things to different people, so
 
 - [ ] Data Consumer
 - [ ] Leader 
-- [ ] Data Analyst
-- [ ] Citizen Data Scientist
-- [ ] Data Scientist
-- [ ] Data Engineer
+- [X] Data Analyst
+- [X] Citizen Data Scientist
+- [X] Data Scientist
+- [X] Data Engineer
 - [ ] Database Administrator
 - [ ] Statistician
-- [ ] Machine Learning Scientist
+- [X] Machine Learning Scientist
 - [ ] Programmer
 - [ ] Other (please describe)
 
 ### What industries would this apply to?
 
 *List one or more industries that the content would be appropriate for.*
+Industry Agnostic
 
 
 ### What level of expertise should learners have before beginning the live training?
@@ -105,10 +117,18 @@ Terms like "beginner" and "expert" mean different things to different people, so
 > - Can run a linear regression, use it to make predictions, and interpret the coefficients.
 > - Can calculate grouped summary statistics using SELECT queries with GROUP BY clauses.
 
+> - Can run a linear regression, use it to make predictions, and calculate performance metrics.
+> - Can run a logistic regression, use it to make predictions, and calculate performance metrics.
+> - Can run a decision tree classifier/regressor, use it to make predictions, and calculate performance metrics.
+
 
 ## Step 3: Prerequisites
 
 List any prerequisite courses you think your live training could use from. This could be the live session’s companion course or a course you think students should take before the session. Prerequisites act as a guiding principle for your session and will set the topic framework, but you do not have to limit yourself in the live session to the syntax used in the prerequisite courses.
+
+> - [Supervised Learning with scikit-learn](https://learn.datacamp.com/courses/supervised-learning-with-scikit-learn)
+> - [Ensemble Methods in Python](https://learn.datacamp.com/courses/ensemble-methods-in-python)
+
 
 
 ## Step 4: Session Outline
