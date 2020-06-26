@@ -141,33 +141,35 @@ A live training session usually begins with an introductory presentation, follow
 > ### Introduction Slides 
 > - Introduction to the webinar and instructor (led by DataCamp TA)
 > - Introduction to the topics
->   - Discuss need to become data fluent
->   - Define data fluency
->   - Discuss how learning Python fits into that and go over session outline
+>   - Discuss need to become familiar with baseline machine learning algorithms
+>   - Define what a 'weak' learner is
+>   - Discuss learning ensemble methods and go over session outline
 >   - Set expectations about Q&A
 >
 > ### Live Training
-> #### Exploratory Data Analysis
-> - Import data and print header of DataFrame `pd.read_excel()`, `.head()`
-> - Glimpse at the data to
->   - Get column types using `.dtypes`
->   - Use `.describe()`, `.info()`
+> #### Ensemble Technique #1 - `mlxtend`
+> - Import classification dataset and print header of DataFrame `pd.read_csv()`, `.head()`
+> - Glimpse at the data using `.dtypes`, `.describe()`, `.info()` to understand the data
+> - Build baseline model
+> - Build layers and first stacked <u>classifier</u> 
+> - Calculate performance metrics appropriate to classification problems 
 > - **Q&A** 
-> #### Data Cleaning and making it ready for analysis
-> - Convert date columns to datetime `pd.to_datetime()`
-> - Change column names
-> - Extract year, month from datetime `.strftime()`
-> - Drop an irrelevant column `.drop()`
-> - Fill missing values with `.fillna()`
-> #### Creating a report
-> - First report question: What is our overall sales performance this year? `.groupby()`, `.plt.plot()`
-> - Second report question: What is our overall sales performance this year? `.merge()`, `.groupby()`, `plt.plot()`
-> - Third report question: What is our overall sales performance this year? `.merge()`, `.groupby()`, `plt.plot()`
+> #### Ensemble Technique #2 - `vecstack`
+> - Import and briefly explore first regression dataset
+> - Build baseline model
+> - Build layers and first stacked <u>regressor</u> 
+> - Calculate performance metrics appropriate to regression problems 
+> #### Ensemble Technique #3 - `sklearn.ensemble`
+> - Import and briefly explore second regression dataset
+> - Create baseline model and calculate performance metrics
+> - Build layers and stacked regressor, calculate performance metrics
+> - Discuss how to apply same to `sklearn.ensemble.StackingClassifier`
+> - Compare and contrast the three stacking techniques
 > - **Q&A**
 >
 > ### Ending slides
 > - Recap of what we learned
-> - The data science mindset
+> - The model stacking mindset
 > - Call to action and course recommendations
 
 ## Authoring your session
