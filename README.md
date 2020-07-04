@@ -76,8 +76,7 @@ As a rule of thumb, your dataset should always answer yes to the following quest
 
 Check our [datasets to avoid](https://instructor-support.datacamp.com/en/articles/2360699-datasets-to-avoid) list. 
 
-> - [New York City Property Sales](https://www.kaggle.com/new-york-city/nyc-property-sales)-Regression
-> - [Iowa Liquor Sales](https://www.kaggle.com/residentmario/iowa-liquor-sales)-Regression
+> - [Abalone Age](https://archive.ics.uci.edu/ml/datasets/abalone)-Regression
 > - [Pima Indians Diabetes](https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.csv)-Binary Classification
 
 ## Step 2: Who is this session for?
@@ -147,24 +146,22 @@ A live training session usually begins with an introductory presentation, follow
 >   - Set expectations about Q&A
 >
 > ### Live Training
-> #### Ensemble Technique #1 - `mlxtend`
-> - Import classification dataset and print header of DataFrame `pd.read_csv()`, `.head()`
+> #### Ensemble Technique #1 - `Classifier`
+> - Import Diabets classification dataset and print header of DataFrame `pd.read_csv()`, `.head()`
 > - Glimpse at the data using `.dtypes`, `.describe()`, `.info()` to understand the data
-> - Build baseline model
-> - Build layers and first stacked <u>classifier</u> 
-> - Calculate performance metrics appropriate to classification problems 
-> - **Q&A** 
-> #### Ensemble Technique #2 - `vecstack`
-> - Import and briefly explore first regression dataset
-> - Build baseline model
+> - Build baseline models
+> - Build layers and first stacked model <u>classifier</u> 
+> - Compare baseline and stacked models using `seaborn.boxplot`
+> #### Ensemble Technique #2 - `Regressor`
+> - Import and briefly explore Abalone regression dataset
+> - Build baseline models
 > - Build layers and first stacked <u>regressor</u> 
-> - Calculate performance metrics appropriate to regression problems 
-> #### Ensemble Technique #3 - `sklearn.ensemble`
-> - Import and briefly explore second regression dataset
-> - Create baseline model and calculate performance metrics
-> - Build layers and stacked regressor, calculate performance metrics
+> - Compare baseline and stacked models using `seaborn.boxplot`
+> #### Ensemble Technique #3 - `Regressor`
+> - Discuss multiple layer stacking
+> - Build additional layer and stacked regressor model
+> - Compare baseline and stacked models using `seaborn.boxplot`
 > - Discuss how to apply same to `sklearn.ensemble.StackingClassifier`
-> - Compare and contrast the three stacking techniques
 > - **Q&A**
 >
 > ### Ending slides
